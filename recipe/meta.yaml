@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kevinschaich/h3-pyspark/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 64c39a66664676ce799dbfb5cbd49d9a9d76926e5495dcc8ea580fb03b4b46fb
+  sha256: d66683308a15864f6a50d86be7e2258de2618967fc8050cbbd1dd74f6402c88e
 
 build:
   noarch: python
