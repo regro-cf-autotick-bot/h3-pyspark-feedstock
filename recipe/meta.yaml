@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: h3-pyspark
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kevinschaich/h3-pyspark/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d66683308a15864f6a50d86be7e2258de2618967fc8050cbbd1dd74f6402c88e
+  sha256: ea8da1a60be537b8fd19110a0e485be70884216f8a6f3f8bfe2de70d79a1bc0b
 
 build:
   noarch: python
