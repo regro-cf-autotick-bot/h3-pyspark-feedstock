@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,14 +19,16 @@ requirements:
     - black
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pyspark
     - h3-py
     - shapely
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - h3_pyspark
 
